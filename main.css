@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+body {
+    background-color: #ededed;
+}
+
+header{
+    display: block;
+    text-align: center;
+    background-color: rgb(44, 1, 69);
+    color: rgb(30, 240, 191);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+header img {
+    height: 60px;
+    display: flexbox;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header a:hover{
+    color:rgba(0, 0, 0, 0.31);
+}
+
+h3{
+    color: rgba(0, 0, 0, 0.783);
+}
+
+.tabela{
+    padding: 80px 20px;
+    display: flex;
+}
+
+.inContatoNovo{
+    width: 100%;
+    text-align: center;
+}
+
+.inContatoNovo h2{
+    padding: 30px;
+    font-size: 30px;
+}
+
+.inContatoNovo input{
+    padding: 20px 30px;
+    border: 0.1px solid rgba(0, 0, 0, 0.296);
+    margin-bottom: 20px;
+}
+
+.BotaoSubmit{
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 255,0.4);
+    border: none;
+    margin-left: 10px;
+}
+
+table{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.342);
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.itemNovo{
+    border-top: 1px solid black;
+    font-size: 20px;
+}
+
+
+th{
+    color: rgba(0, 0, 0, 0.663);
+    padding: 8px 0 ;
+}
+
+td{
+    margin: 0;
+    padding: 0;
+}

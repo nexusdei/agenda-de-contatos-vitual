@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda virtual de contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container"></div>
+    <header>
+        <img src="./images/telefone_mail_contatos.png" alt="telefone e contatos logo">
+        <h1>AGENDA VIRTUAL DE CONTATOS</h1>
+    </header>
+            <div class="inContatoNovo">
+                <h2>Insira um novo contato</h2>
+                <form id="formulario">
+                    <input class="Nome" type="text"  placeholder="Nome" required>
+                    <input class="DDD" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" size="2" maxlength="2" required placeholder="DDD">
+                    <input class="Telefone" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlenth="9" required placeholder="Número">
+                    <button type="submit" class="BotaoSubmit">ADICIONAR+</button>
+                </form>
+            </div>
+                <table class="TabelaFeita" cellspacing="0">
+                    <thead>
+                        <th>Nome</th>
+                        <th>DDD</th>
+                        <th>Número</th>
+                    </thead>
+                    <tbody class="corpoTabela">
+                    </tbody>
+                </table>  
+            </div>
+        </div>
+    <script src="main.js"></script>
+</body>
+</html>
