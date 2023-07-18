@@ -20,7 +20,14 @@ header{
 
 header img {
     height: 60px;
-    display: flexbox;
+}
+
+/* PARA DEIXAR A LOGO AO LADO DO ESCRITO DO TITULO AGENDA - TEM QUE CRIAR UMA DIV ANTES NO HTML */
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .container{
@@ -40,6 +47,7 @@ h3{
 .tabela{
     padding: 80px 20px;
     display: flex;
+    align-items: center;
 }
 
 .inContatoNovo{
@@ -49,31 +57,38 @@ h3{
 
 .inContatoNovo h2{
     padding: 30px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .inContatoNovo input{
-    padding: 20px 30px;
-    border: 0.1px solid rgba(0, 0, 0, 0.296);
+    padding: 10px 50px;
+    border: 2px solid rgba(0, 0, 0, 0.296);
     margin-bottom: 20px;
+    margin-block-start: auto;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
 }
 
 .BotaoSubmit{
     padding: 10px;
     font-size: 20px;
     background-color: rgba(0, 0, 255,0.4);
-    border: none;
-    margin-left: 10px;
+    margin-left: 100px;
 }
 
 table{
-    max-width: 600px;
+    max-width: 960px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0.342);
     border-radius: 20px;
     font-size: 20px;
+    justify-content: center;
+
 }
 
 .itemNovo{

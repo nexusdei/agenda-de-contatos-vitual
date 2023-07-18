@@ -9,23 +9,25 @@ var nomes = []
 var ddds = []
 var numeros = []
 
-
 //FUNÇÕES
 function adicionaLinha(){
-    var inputNome = document.querySelector('.Nome').value;
-    var inputDDD = parseInt(document.querySelector('.DDD').value);
-    var inputNumero = parseInt(document.querySelector('.Telefone').value);
+    var inputNome = document.querySelector('.Nome');
+    var inputDDD = document.querySelector('.DDD');
+    var inputNumero = document.querySelector('.Telefone');
 
-    nomes.push(inputNome);
+    nomes.push(inputNome.value);
     ddds.push(inputDDD);
     numeros.push(inputNumero);
 
     var linha = '<tr class="itemNovo">';
-    linha += `<td>${inputNome}`;
-    linha += `<td>${inputDDD}`;
-    linha += `<td>${inputNumero}`;
-
+    linha += `<td>${inputNome.value}`;
+    linha += `<td>${inputDDD.value}`;
+    linha += `<td>${inputNumero.value}`;
     linhas += linha;
+
+    inputNome.value = ''
+    inputDDD.value = ''
+    inputNumero.value = ''
 }
 
 function atualizaTabela(){
